@@ -1,0 +1,2 @@
+refactor code to enable HTML Drag and Drop API functionality for contentArray items.
+Share only code that needs to be added or changed.

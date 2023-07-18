@@ -51,14 +51,14 @@ body {
   align-items: center;
 }
 .lite-body {
-  background-image: url("/images/bg-mobile-light.jpg");
+  background-image: url("/public/images/bg-mobile-light.jpg");
   background-size: 100% 300px;
   background-repeat: no-repeat;
   background-position: top;
   background-color: var(--very-light-gray);
 }
 .dark-body {
-  background-image: url("/images/bg-mobile-dark.jpg");
+  background-image: url("/public/images/bg-mobile-dark.jpg");
   background-size: 100% 300px;
   background-repeat: no-repeat;
   background-position: top;
@@ -104,12 +104,12 @@ h1 {
   cursor: pointer;
 }
 .lite-icon-moon {
-  background-image: url("/images/icon-moon.svg");
+  background-image: url("/public/images/icon-moon.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .dark-icon-sun {
-  background-image: url("/images/icon-sun.svg");
+  background-image: url("/public/images/icon-sun.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -199,7 +199,7 @@ article {
   background-color: var(--very-dark-grayish-blue);
   color: var(--very-light-grayish-blue);
 }
-.lite-art-div-check {
+.art-div-check {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -207,40 +207,12 @@ article {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  border: 0.1px solid var(--dark-grayish-blue);
 }
-.lite-art-div-check:hover {
-  cursor: pointer;
-}
-.dark-art-div-check {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  border: 0.1px solid var(--very-light-grayish-blue);
-}
-.dark-art-div-check:hover {
+.art-div-check:hover {
   cursor: pointer;
 }
 .icon-check {
   background: var(--check-background);
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  border-radius: 50%;
-}
-.icon-check-on {
-  background: var(--check-background);
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  border-radius: 50%;
-}
-.icon-check-off {
-  background: var(--very-light-gray);
   width: 90%;
   height: 90%;
   object-fit: contain;
@@ -256,13 +228,7 @@ h2 {
   align-items: center;
 }
 h2:hover {
-  cursor: grab;
-}
-.h2-check-on{
-  text-decoration: line-through;
-}
-.h2-check-off{
-  text-decoration: none;
+  cursor: pointer;
 }
 .art-div-cross {
   width: 2rem;
@@ -277,12 +243,12 @@ h2:hover {
   cursor: pointer;
 }
 .lite-icon-cross {
-  background-image: url("/images/icon-cross-dark.svg");
+  background-image: url("/public/images/icon-cross-dark.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .dark-icon-cross {
-  background-image: url("/images/icon-cross-lite.png");
+  background-image: url("/public/images/icon-cross-lite.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -299,12 +265,12 @@ h2:hover {
   cursor: pointer;
 }
 .lite-icon-edit {
-  background-image: url("/images/icon-edit-lite.png");
+  background-image: url("/public/images/icon-edit-lite.png");
   background-repeat: no-repeat;
   background-size: 75%;
 }
 .dark-icon-edit {
-  background-image: url("/images/icon-edit-dark.png");
+  background-image: url("/public/images/icon-edit-dark.png");
   background-repeat: no-repeat;
   background-size: 75%;
 }
@@ -331,7 +297,6 @@ aside {
 }
 #aside-clear:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 /* Nav ************************/
 nav {
@@ -357,12 +322,11 @@ nav {
   color: var(--very-light-grayish-blue);
   border: 0.1px solid var(--very-light-grayish-blue);
 }
-.active {
-  color: var(--bright-blue);
-}
-.nav-div:hover{
-  text-decoration: underline;
+nav div {
   cursor: pointer;
+}
+#nav-all {
+  color: var(--bright-blue);
 }
 /* Footer ************************/
 footer {
@@ -388,11 +352,10 @@ footer {
 }
 a {
   color: hsl(228, 45%, 44%);
-  text-decoration: none;
 }
 a:hover {
   color: hsl(240, 100%, 20%);
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 /* Media Queries ************************/
 @media (min-width: 500px) {
